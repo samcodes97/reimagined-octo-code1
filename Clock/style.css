@@ -1,0 +1,63 @@
+html
+{
+    background-color: white;
+    font-size: 10px;
+    background-size: cover;
+    background-image: url("/wall-21534__340.jpg");
+    text-align: center;
+}
+
+.clock{
+    border-radius: 50%;
+    margin: 50px auto;
+    height: 40rem;
+    width: 40rem;
+    border: 10px solid black;
+    border-radius: 50%;
+}
+
+.clockface{
+    position: relative;
+    background-image: url("/face.png");
+    height: 100%;
+    background-position: center;
+    width: 100%;
+    border-radius: 50%;
+    
+}
+
+.hand
+{
+    position: absolute;
+    height: 5px;
+    width: 50%;
+    right: 50%;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1)
+}
+
+#hour
+{
+    background-color: black;
+    width: 23%;
+    height: 8px;
+    opacity: 0.7;
+    border-radius: 80%;
+}
+
+#minutes{
+    background-color: black;
+    height: 6px;
+    width: 38%;
+    border-radius: 70%;
+  }
+
+#seconds{
+    background-color: gold;
+    height: 3px;
+    width: 48%;
+    border-radius: 40%;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+<!-- Button trigger modal --> 
+<div class="dsdds text-center">
+<button type="button" class="btn btn-outline-danger " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <b> Sign in or Sign up</b> 
+  </button>
+</div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">FORM</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"> <b>Log In</b></button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Sign Up</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div class="wrapper fadeInDown">
+                    <div id="formContent">
+                      <!-- Tabs Titles -->
+                  
+                      <!-- Icon -->
+                      <!-- <div class="fadeIn first">
+                        <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+                      </div> -->
+                  
+                      <!-- Login Form -->
+                      <form>
+                        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+                        <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+                        <input type="submit" class="fadeIn fourth" value="Log In">
+                      </form>
+                  
+                      <!-- Remind Passowrd -->
+                      <div id="formFooter">
+                        <a class="underlineHover" href="#">Forgot Password?</a>
+                      </div>
+                  
+                    </div>
+                  </div>
+            </div>
+            <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <!-- dsdsds -->
+                <div class="container d-flex justify-content-center fadeInDown">
+
+                    <form id="form1" class="p-3 rounded shadow">
+                
+                        <h4 class="text-center my-3">Sign Up</h4>
+                
+                        <div class="input-group mt-4 ">
+                            <div class="input-group-prepend col-md-5 ms-2">
+                                <label id="lbl1" for="fname" class="form-label">Name</label>
+                                <input id="input1" name="ono[]" type="text" class="form-control p-1"
+                                    placeholder="Enter your name">
+                                <p id="myp"></p>
+                            </div>
+                            <div class="input-group-prepend col-md-5 ms-2 mb-1">
+                                <label id="lbl2" for="lname" class="form-label">Password</label>
+                                <input id="input2" name="ono[]" type="text" class="form-control p-1" placeholder="Enter your password">
+                                <p id="myp2"></p>
+                            </div>
+                        </div>
+                
+                        <div class="col-md-7 ms-2">
+                            <label id="lbl3" for="inputemail" class="form-label">Email</label>
+                            <input id="input3" name="ono[]" type="email" class="form-control" placeholder="abc@email.com">
+                            <p id="myp3"></p>
+                        </div>
+                
+                        <div class="ms-2 mt-2">
+                            <label for="lname" class="form-label me-4">Gender</label>
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>
+                            <label class="form-check-label" for="radio1">Male</label>
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                            <label class="form-check-label" for="radio1">Female</label>
+                        </div>
+                
+                        <div class="ms-2">
+                            <label for="lname" class="form-label me-4">Select your Country</Select></label>
+                            <select class="form-select">
+                                <option>United Kingdom</option>
+                                <option>Pakistan</option>
+                                <option>United States of America</option>
+                                <option>China</option>
+                            </select>
+                
+                            <div class="mt-2 form-check">
+                                <input type="checkbox" class="form-check-input" id="terms">
+                                <label class="form-check-label" for="terms">I agree terms and conditions.</label>
+                            </div>
+                
+                            <div class="text-center mt-3">
+                                <button id="btn1" type="button" class="btn btn-primary rounded-pill w-75"
+                                    onclick="myValidate()">Sign Up</button>
+                            </div>
+                
+                    </form>
+                </div>
+                
+
+                <!-- dsdsds -->
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

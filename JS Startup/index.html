@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<p id="demo"> Lorem ipsum dolor sit amet consectetur,
+     adipisicing elit. Voluptatibus tenetur iste consectetur
+      ipsam nihil incidunt culpa perferendis deleniti dolores?<p>
+
+<button type="button" onclick="changeIndex()">Click here</button>
+<button type="button"  onclick="hideIndex()">Click here to hide content</button>
+<button type="button" onclick="showIndex()">Click here to show content again</button>
+
+
+<script>
+    function changeIndex(){
+        document.getElementById("demo").innerHTML="My first JS program"
+    }
+    function hideIndex(){
+        document.getElementById("demo").style.display="none" 
+    }
+    function showIndex(){
+        document.getElementById("demo").style.display="block" 
+    }
+</script>
+
+</body>
+</html>
